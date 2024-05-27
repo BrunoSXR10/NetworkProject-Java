@@ -1,0 +1,9 @@
+- on crée le serveur dans un terminal 1 à une @ip precise et port précis (ou pas)
+- on crée le client 1 dans un terminal à une @ip precise et un premier port dispo (pas besoin , on precise aussi @ipserveur et port serveur  
+
+- le serveur renvoie nouveauClient lorsque le client est créé
+- pour le ip pour le moment on teste localement avec localhost 
+
+
+Main Serveur crée un serveur 
+Main client crée un client 
