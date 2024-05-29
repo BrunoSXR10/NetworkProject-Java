@@ -18,14 +18,12 @@ public class Process implements Runnable {
             Scanner in = new Scanner(socket.getInputStream());
             PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
 
-            // Loop para continuar a comunicação até que o cliente feche a conexão
             while (in.hasNextLine()) {
                 String message = in.nextLine();
                 System.out.println("Received: " + message);
-                out.println("Echo: " + message);  // Envia a resposta ao cliente
+                out.println("Echo: " + message);  
             }
 
-            // Fecha os recursos
             in.close();
             out.close();
             socket.close();

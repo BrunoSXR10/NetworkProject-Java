@@ -10,14 +10,14 @@ public class Client {
 
     public static void main(String[] args) {
         try {
-            Socket socket = new Socket("localhost", 1234);  // Use "localhost" para testes locais
+            Socket socket = new Socket("localhost", 100); 
             Scanner in = new Scanner(socket.getInputStream());
             PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
             Scanner stdIn = new Scanner(System.in);
 
             System.out.println("Connected to the server. Type messages to send:");
 
-            while (true) {
+            while (true) { 
                 String userInput = stdIn.nextLine();
                 if ("exit".equalsIgnoreCase(userInput)) {
                     break;
