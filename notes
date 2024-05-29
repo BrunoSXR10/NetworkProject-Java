@@ -1,5 +1,7 @@
-- on crée le serveur dans un terminal 1 à une @ip precise et port précis (ou pas)
-- on crée le client 1 dans un terminal à une @ip precise et un premier port dispo (pas besoin , on precise aussi @ipserveur et port serveur  
+- on crée le serveur dans un terminal 1 à une @ip precise et port précis 
+- on crée le client 1 dans un terminal à une @ip precise, on precise aussi @ipserveur et port serveur  
+on doit vérifier à chaque fois que le port est disponible 
+
 
 - le serveur renvoie nouveauClient lorsque le client est créé
 - pour le ip pour le moment on teste localement avec localhost 
@@ -8,7 +10,12 @@
 Main Serveur crée un serveur 
 Main client crée un client 
 
+c'est le serveur qui s'occupe de tout: 
+le client arrive et se connecte, il choisit un pseudo et le serveur stocke que le nom et le port associé
 
-le client doit hériter de thread dans la contexte de la messagerie
+le client choisit 
+
+Le serveur stocke ces infos sur des threads différents
+le client doit hériter de thread dans le contexte de la messagerie
 
 Lien du compte rendu: https://docs.google.com/document/d/1kGB06JuLUcNXHQ878ji_66JrRKynlsHsDZpZP9yriZ4/edit?usp=sharing 
