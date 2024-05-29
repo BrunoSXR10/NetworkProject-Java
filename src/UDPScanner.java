@@ -30,9 +30,4 @@ public class UDPScanner {
         		return false;
             }
     }
-
-    public static void main(String[] args) {
-        String host = "127.0.0.1"; // Localhost for testing
-        UdpPortScanner(9876);
-    }
 }
